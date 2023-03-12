@@ -377,6 +377,7 @@ HOST_LOADLIBES := $(HOST_LFS_LIBS)
 ifeq ($(shell $(HOSTCC) -v 2>&1 | grep -c "clang version"), 1)
 HOSTCFLAGS  += -Wno-unused-value -Wno-unused-parameter \
 		-Wno-missing-field-ini
+endif
 
 # Make variables (CC, etc...)
 CPP		= $(CC) -E
